@@ -1,8 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&subset=vietnamese');
-
-body {
-  font-family: 'Inter', sans-serif;
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  a {
+    @apply text-blue-400 hover:text-blue-600;
+  }
 }
